@@ -5,7 +5,7 @@ Description
 -----------
 Keyboard to quickly punctuate your messages with ASCII smiley.
 
-**Note: ** you need to run FirefoxOS version 2.0 miminum (B2G 2.0).
+**Note:** you need to run FirefoxOS version 2.0 miminum (B2G 2.0).
 
 
 
