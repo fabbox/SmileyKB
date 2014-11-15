@@ -11,12 +11,12 @@ Keyboard to quickly punctuate your messages with ASCII smiley.
 
 Source code
 -----------
-Sources are available on [github/fabbox](https://github.com/fabbox/smileykb) under GNU GPL3.
+Sources are available on [github/fabbox](https://github.com/fabbox/SmileyKB) under GNU GPL3.
 
 Contact
 --------
 Please report bugs and requests on
-[github/fabbox](https://github.com/fabbox/ArchWiki-Viewer) or to
+[github/fabbox](https://github.com/fabbox/SmileyKB) or to
 <fbox.dev@gmail.com>.
 
 Permissions
