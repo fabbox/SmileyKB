@@ -5,9 +5,17 @@ Description
 -----------
 Keyboard to quickly punctuate your messages with ASCII smiley.
 
-**Note: you need to run FirefoxOS version 2.0 miminum (B2G 2.0).**
+**WARNING: you need to run FirefoxOS version 2.0 miminum (B2G 2.0).**
 
-
+It seems that a change happened between v2.0 et v2.2 concerning the
+"MozActivity" name of the ffos setting panel (from "configure" to
+"moz_configure_window"). This application uses the lastest version which can
+lead to non-functionning "back" button in the setting panel of this keyboard.
+To circumvent this issue, I add a "close" button to the setting panel of this
+keyboard (but you can't use the back button).
+If your device run on firefox OS < 2.2, you may want to change the code in
+"www/js/settings.js". Comment the line beginning by "name:" and uncommented the
+line below.
 
 Source code
 -----------
