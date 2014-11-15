@@ -5,8 +5,8 @@ Description
 -----------
 Keyboard to quickly punctuate your messages with ASCII smiley.
 
-Features
---------
+**Note: ** you need to run FirefoxOS version 2.0 miminum (B2G 2.0).
+
 
 
 Source code
@@ -15,8 +15,9 @@ Sources are available on [github/fabbox](https://github.com/fabbox/smileykb) und
 
 Contact
 --------
-Please report bugs and requests on [github/fabbox](https://github.com/fabbox/ArchWiki-Viewer)
-or to <fbox.dev@gmail.com>.
+Please report bugs and requests on
+[github/fabbox](https://github.com/fabbox/ArchWiki-Viewer) or to
+<fbox.dev@gmail.com>.
 
 Permissions
 -----------
