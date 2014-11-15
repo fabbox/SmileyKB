@@ -1,0 +1,72 @@
+html {
+    font-size: 10px;
+    pointer-events: none;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+#keyboard {
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    bottom: 0;
+
+    z-index: 15;
+    width: 100%;
+    border-top: 0.1rem solid #a1a5a8;
+    pointer-events: auto;
+}
+
+.keyboardLine{
+    display: flex;
+    flex: auto;
+    background: -moz-linear-gradient(bottom, #697478 10%, #606b6e 90%);
+}
+
+#line1 > .key.smiley,
+#line2 > .key.smiley,
+#line3 > .key,
+#line4 > .key{
+    width: 12.5%;
+}
+
+#line4 > .key#specKey_space{
+    width: 25%;
+}
+
+#line4 > .key#switchLayout{
+    width: 10%;
+}
+
+button.key {
+    flex: auto;
+    min-width: 2.6rem;
+    height: 5rem;
+    line-height: 5rem;
+    
+    background: none;
+    color: #fff;
+
+    font-size: 1.8rem;
+    font-weight: normal;
+    text-align: center;
+    font-family: "MozTT",sans-serif;
+    border-radius: 0; 
+
+    margin: 0;
+    padding: 0;
+    border:none;
+    border-right: 0.1rem solid #525b5e;
+}
+
+button.key:active{
+    background: #4a5255;
+}

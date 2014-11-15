@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    overflow: hidden;
+    background: #fff;
+
+    font-family:  "MozTT",Sans-serif;
+}
+
+section[role="region"] > header {
+    position: absolute;
+    top: 0;
+    z-index:10;
+    height:5rem;
+    width: 100%;
+    background: #eeeeee;
+
+    padding: 0;
+    border: none;
+}
+
+section[role="region"] > div {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 5rem);
+    overflow-y: scroll;
+}
+
+section[role="region"] > div p{
+    margin: 1rem;
+    font: bold 1.8rem "MozTT",Sans-serif;
+    font-weight: normal;
+}
+
+section[role="region"] > header:first-child h1 {
+    font: bold 2.5rem/5rem "MozTT",Sans-serif;
+    color:#a6a6a6;
+
+    font-size: 2.3rem;
+    line-height: 5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 1rem;
+    height: 100%;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+section[role="region"] > header:first-child button{
+    /*box-sizing: border-box; XXX: declaration dropped*/
+    position: relative;
+    display: block;
+    overflow: hidden;
+    
+    min-width: 3rem;
+    width: auto;
+    height: 5rem;
+    border: none;
+    background: none repeat scroll 0% 0% transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+section[role="region"] > header:first-child .icon{
+    display: block;
+    background: none no-repeat scroll center center / 4rem auto transparent;
+    font-size: 0px;
+    width: 5rem;
+    height: 5rem;
+}
+
+section[role="region"] > header:first-child .icon-back {
+    float: left;
+    background-image: url("../style/icons/back.svg");
+}
+
+section[role="region"] > header:first-child .icon-close {
+    float: right;
+    background-image: url("../style/icons/close.svg");
+}
