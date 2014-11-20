@@ -1,21 +1,23 @@
 html {
     font-size: 10px;
     pointer-events: none;
+    font-family: "MozTT",sans-serif;
 }
 
 body {
     margin: 0;
     overflow: hidden;
+    font-family: "MozTT",sans-serif;
 }
 
-button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
+.hidden{
+    display:none;
 }
 
 #keyboard {
     width: 100%;
-    height: 20rem;
+    height: 20.4rem; /* 20.4rem keyboard*/
+
     position: absolute;
     bottom: 0;
 
@@ -31,31 +33,23 @@ button::-moz-focus-inner {
     background: -moz-linear-gradient(bottom, #697478 10%, #606b6e 90%);
 }
 
-#line1 > .key.smiley,
-#line2 > .key.smiley,
-#line3 > .key,
-#line4 > .key{
-    width: 12.5%;
+.bottomLine{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-#line4 > .key#specKey_space{
-    width: 25%;
-}
-
-#line4 > .key#switchLayout{
-    width: 10%;
-}
-
-button.key {
+button {
     flex: auto;
     min-width: 2.6rem;
-    height: 5rem;
-    line-height: 5rem;
-    
+    height: 5.1rem;
+    line-height: 5.1rem;
+    width: 12.5%;
+
     background: none;
     color: #fff;
 
-    font-size: 1.8rem;
     font-weight: normal;
     text-align: center;
     font-family: "MozTT",sans-serif;
@@ -67,6 +61,73 @@ button.key {
     border-right: 0.1rem solid #525b5e;
 }
 
-button.key:active{
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.keyboardLine:last-child {
+    border-right-color: transparent;
+}
+
+button:active{
     background: #4a5255;
+}
+
+button.smiley {
+    font-size: 1.8rem;
+}
+
+button.emoji {
+    font-size: 2.2rem;
+    overflow: hidden;
+}
+
+button.large{
+    width: 15%;
+}
+
+button#specKey_space{
+    width: 25%;
+}
+
+button#switchLayout{
+    width: 10%;
+    color: #abb0b1;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+button.specKey_backspace{
+    background: none no-repeat scroll center center / 1.5rem auto transparent;
+    font-size:0px;
+    background-image: url("./icons/btBack.svg");
+}
+
+button#specKey_enter{
+    background: none no-repeat scroll center center / 1.5rem auto transparent;
+    font-size:0px;
+    background-image: url("./icons/btEnter.svg");
+}
+
+button#switchEmoji{
+    /*width: 5rem !important ;*/
+    background: none no-repeat scroll center center / 2.5rem auto transparent;
+    font-size:0px;
+    background-image: url("./icons/switchEmoji.svg");
+}
+
+button#switchEmoji.active{
+    background-image: url("./icons/switchEmoji.active.svg");
+
+}
+
+button#switchSmiley{
+    /*width: 5rem !important ;*/
+    background: none no-repeat scroll center center / 2.5rem auto transparent;
+    font-size:0px;
+    background-image: url("./icons/switchSmiley.svg");
+}
+button#switchSmiley.active{
+    background-image: url("./icons/switchSmiley.active.svg");
 }

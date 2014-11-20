@@ -10,51 +10,90 @@
     <body>
         <div id="keyboard">
 
-            <div id="line1" class="keyboardLine">
-                <button class="key smiley">:-)</button>
-                <button class="key smiley">:-(</button>
-                <button class="key smiley">\o/</button>
-                <button class="key smiley">:-C</button>
-                <button class="key smiley">;-)</button>
-                <button class="key smiley">:-p</button>
-                <button class="key smiley">:'(</button>
-                <button class="key smiley">:-*</button>
+            <div id="ascii">
+                <div class="keyboardLine">
+                    <button class="smiley">:-)</button>
+                    <button class="smiley">:-(</button>
+                    <button class="smiley">\o/</button>
+                    <button class="smiley large">*\o/*</button>
+                    <button class="smiley">;-)</button>
+                    <button class="smiley">:-p</button>
+                    <button class="smiley">:'(</button>
+                    <button class="smiley">:-*</button>
+                </div>
+
+                <div class="keyboardLine">
+
+                    <button class="smiley">B-)</button>
+                    <button class="smiley">:-@</button>
+                    <button class="smiley">:-!</button>
+                    <button class="smiley large">o_O</button>
+                    <button class="smiley">:-[</button>
+                    <button class="smiley">O:-)</button>
+                    <button class="smiley">XD</button>
+
+                    <button class="smiley">&lt;3</button>
+                </div>
+
+                <div class="keyboardLine">
+                    <button class="smiley">:-O</button>
+                    <button class="smiley">:-X</button>
+                    <button class="smiley">:-D</button>
+                    <button class="smiley">:-/</button>
+                    <button class="smiley">:-\</button>
+                    <button class="smiley">X-(</button>
+                    <button class="smiley">:-|</button>
+
+                    <button class="specKey_backspace">⌫</button>
+                </div>
             </div>
 
-            <div id="line2" class="keyboardLine">
-                <button class="key smiley">:-O</button>
-                <button class="key smiley">B-)</button>
-                <button class="key smiley">:-@</button>
-                <!--<button class="key smiley">:-$</button>-->
-                <button class="key smiley">:-!</button>
-                <button class="key smiley">:-[</button>
-                <button class="key smiley">O:-)</button>
-                <button class="key smiley">XD</button>
-                <button class="key smiley">&lt;3</button>
+            <div id="emoji" class="hidden">
+                <div class="keyboardLine">
+                    <button class="emoji" title="U+1F601">😁</button>
+                    <button class="emoji" title="U+1F603">😃</button>
+                    <button class="emoji" title="U+1F624">😤</button>
+                    <button class="emoji" title="U+1F609">😉</button>
+
+                    <button class="emoji" title="U+1F60A">😊</button>
+                    <button class="emoji" title="U+1F60D">😍</button>
+                    <button class="emoji" title="U+1F612">😒</button>
+                    <button class="emoji" title="U+1F616">😖</button>
+
+                </div>
+
+                <div class="keyboardLine">
+                    <button class="emoji" title="U+1F60B">😋</button>
+                    <button class="emoji" title="U+1F61E">😞</button>
+                    <button class="emoji" title="U+1F620">😠</button>
+                    <button class="emoji" title="U+1F62D">😭</button>
+                    <button class="emoji" title="U+1F631">😱</button>
+                    <button class="emoji" title="U+1F61A">😚</button>
+                    <button class="emoji" title="U+1F614">😔</button>
+                    <button class="emoji" title="U+1F632">😲</button>
+                </div>
+
+                <div class="keyboardLine">
+                    <button class="emoji" title="U+1F63B">😻</button>                    
+                    <button class="emoji" title="U+1F355">🍕</button>
+                    <button class="emoji" title="U+1F699">🚙</button>
+                    <button class="emoji" title="U+1F4A8">💨</button>
+                    <button class="emoji" title="U+1F491">💑</button>
+                    <button class="emoji" title="U+2764">❤</button>
+                    <button class="emoji" title="U+1F427">🐧</button>
+                    <button class="specKey_backspace">⌫</button>
+                </div>
             </div>
 
-            <div id="line3" class="keyboardLine">
-                <button class="key smiley">:-X</button>
-                <button class="key smiley">:-D</button>
-                <button class="key smiley">:-Q</button>
-                <button class="key smiley">:-/</button>
-                <button class="key smiley">:-\</button>
-                <button class="key smiley">X-(</button>
-                <button class="key smiley">:-|</button>
-                <!--<button class="key smiley">:-V</button>-->
-                
-                <button id="specKey_backspace" class="key">⌫</button>
-            </div>
 
-            <div id="line4" class="keyboardLine">
-                <button id="switchLayout" class="key">&hellip;</button>
-                
-                <button class="key smiley">*\o/*</button>
-                <button class="key smiley">=-O</button>
-                <button class="key smiley">o_O</button>
-                
-                <button id="specKey_space" class="key">&nbsp;</button>
-                <button id="specKey_enter" class="key">↵</button>
+            <div class="keyboardLine bottomLine">
+                <button id="switchLayout" >&hellip;</button>
+
+                <button id="switchSmiley" class="active">smiley</button>
+                <button id="switchEmoji" >emoji</button>
+
+                <button id="specKey_space" >&nbsp;</button>
+                <button id="specKey_enter" >↵</button>
             </div>
 
         </div>
