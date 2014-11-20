@@ -3,7 +3,7 @@ Smiley Keyboard for FirefoxOS
 
 Description
 -----------
-Keyboard to quickly punctuate your messages with ASCII smiley.
+Keyboard to quickly punctuate your messages with ASCII smiley and emoji.
 
 **WARNING: you need to run FirefoxOS version 2.0 miminum (B2G 2.0).**
 
