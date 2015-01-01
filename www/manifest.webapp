@@ -1,7 +1,7 @@
 {
   "name": "Smiley Keyboard",
   "description": "Keyboard to quickly punctuate your messages with ASCII smiley and emoji.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "privileged",
   "role": "input",
   "launch_path": "/settings.html",
